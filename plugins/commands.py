@@ -231,8 +231,7 @@ async def start(client, message):
     buttons = [[
         InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
    ],[
-        InlineKeyboardButton('🍁 ꜱᴇʀɪᴇꜱ', url='https://t.me/SeriesOfUrvashiTheaters'),
-        InlineKeyboardButton('🌿 ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}')
+        InlineKeyboardButton('🌿 ɢʀᴏᴜᴘ', url=f'https://t.me/royal_Cinimas')
    ],[
         InlineKeyboardButton('🔰 ᴄʟᴏꜱᴇ ᴛʜᴇ ᴅᴀᴛᴀ🔰', callback_data='close_pages')   
     ]]
