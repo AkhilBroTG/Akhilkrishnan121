@@ -228,14 +228,14 @@ async def start(client, message):
             f_caption=f_caption
     if f_caption is None:
         f_caption = f"{files.file_name}"
-    buttons = [
-                    [
-                        InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data="close_pages")
-                    ],
-                    [
-                        InlineKeyboardButton(text=f'🌿 Fɪʟᴇ sɪᴢᴇ 【 {size} 】🌿', callback_data='gxneo')
-                    ]
-                    ]
+    buttons = [[
+        InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+   ],[
+        InlineKeyboardButton('🍁 ꜱᴇʀɪᴇꜱ', url='https://t.me/SeriesOfUrvashiTheaters'),
+        InlineKeyboardButton('🌿 ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}')
+   ],[
+        InlineKeyboardButton('🔰 ᴄʟᴏꜱᴇ ᴛʜᴇ ᴅᴀᴛᴀ🔰', callback_data='close_pages')   
+    ]]
     await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
